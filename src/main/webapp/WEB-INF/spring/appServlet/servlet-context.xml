@@ -27,14 +27,7 @@
 	<context:component-scan base-package="com.template.app" />
 	
 	<interceptors>
-		<interceptor>
-			<mapping path="/**" />
-			<beans:bean class="com.template.app.common.interceptor.LoginInterceptor" />
-		</interceptor>
-		
-		<interceptor>
-			<mapping path="/**"/>
-			<beans:bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang" />
-		</interceptor>
+		<beans:bean class="com.template.app.common.interceptor.LoginInterceptor" />
+		<beans:bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang" />
 	</interceptors>
 </beans:beans>
