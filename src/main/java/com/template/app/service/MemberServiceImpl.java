@@ -1,7 +1,6 @@
 package com.template.app.service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,13 +31,7 @@ public class MemberServiceImpl implements UserDetailsService {
 	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		List<SimpleGrantedAuthority> roles = new ArrayList<SimpleGrantedAuthority>();
-		
-		if ("test".equals(username)) {
-			roles.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
-		}
-		
-		UserDetails user = new User("test", passwordEncoder.encode("1234"), roles);
+		UserDetails user = new User("test", passwordEncoder.encode("1234"), Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN")));
 		
 		return user;
 	}
