@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Home</title>
+		<title>Admin</title>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="Pragma" content="no-cache">
@@ -11,9 +11,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/template/mustache.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/template/mustache.min.js"></script>
 		
 		<link type="text/css" rel="stylesheet" href="">
 		
