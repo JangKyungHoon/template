@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.template.app.service.HelloService;
 
-@Controller
+@Controller("helloController")
 public class HelloController {
 	Logger logger = Logger.getLogger(HelloController.class);
 	

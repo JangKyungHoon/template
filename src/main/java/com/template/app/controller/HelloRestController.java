@@ -6,7 +6,7 @@ import java.util.Map;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController("helloRestController")
 @RequestMapping("/rest")
 public class HelloRestController {
 	@RequestMapping("/hello")
