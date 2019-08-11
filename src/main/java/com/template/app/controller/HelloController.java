@@ -43,7 +43,6 @@ public class HelloController {
 	public String admin() {
 		logger.info("admin page");
 
-		
 		return "admin/admin";
 	}
 }
