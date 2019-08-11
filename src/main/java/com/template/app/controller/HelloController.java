@@ -42,6 +42,7 @@ public class HelloController {
 	@RequestMapping(value="/admin/index", method=RequestMethod.GET)
 	public String admin() {
 		logger.info("admin page");
+
 		
 		return "admin/admin";
 	}
